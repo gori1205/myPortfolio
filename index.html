@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gori Biswas | BTech Portfolio</title>
+  <meta name="description" content="Portfolio of Gori Biswas, a BTech Computer Science & Technology student at St. Thomas' College of Engineering and Technology, Kolkata." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== CURSOR GLOW ===== -->
+  <div id="cursor-glow"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">&lt;Gori /&gt;</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Open to Internships &amp; Projects
+      </div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Gori Biswas</span>
+      </h1>
+      <div class="hero-subtitle">
+        <span class="static-text">I build </span>
+        <span class="typed-text" id="typed-text"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc">
+        BTech CS&T @ St. Thomas' College of Engineering &bull; Kolkata &bull; Full-Stack Dev &bull; AI Enthusiast
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-secondary">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">12+</span><span class="stat-label">Projects</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years Coding</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">5★</span><span class="stat-label">GitHub Stars</span></div>
+      </div>
+    </div>
+    <div class="hero-image-wrapper">
+      <div class="hero-image-ring ring-1"></div>
+      <div class="hero-image-ring ring-2"></div>
+      <div class="hero-image-ring ring-3"></div>
+      <div class="hero-image-container">
+        <img src="assets/profile.png" alt="Gori Biswas" class="hero-avatar" id="hero-avatar" />
+      </div>
+      <div class="floating-chip chip-1"><span>React</span></div>
+      <div class="floating-chip chip-2"><span>Python</span></div>
+      <div class="floating-chip chip-3"><span>ML</span></div>
+      <div class="floating-chip chip-4"><span>Node.js</span></div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <div class="scroll-dot"></div>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a passionate <strong>B.Tech Computer Science &amp; Technology</strong> student at <strong>St. Thomas' College of Engineering and Technology, Kolkata</strong> with a deep love for building software that makes a real-world difference. My journey started with curiosity — why do websites work the way they do? That curiosity grew into skills spanning frontend, backend, and machine learning.</p>
+          <p>When I'm not coding, you'll find me contributing to open-source projects, participating in hackathons (finalist at Smart India Hackathon 2024!), or exploring the latest in AI research.</p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">🎓</div>
+              <div>
+                <strong>St. Thomas' College of Engg. & Tech.</strong>
+                <span>B.Tech CS&T, Kolkata</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🏆</div>
+              <div>
+                <strong>SIH 2024 Finalist</strong>
+                  <span>Smart India Hackathon – AI Track</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">💼</div>
+              <div>
+                <strong>SDE Intern – TechCorp</strong>
+                <span>Summer 2024 – Built ML pipeline</span>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn-outline" id="download-cv">Download CV ↓</a>
+        </div>
+        <div class="about-visual reveal">
+          <div class="code-card">
+            <div class="code-card-header">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="code-filename">gori.json</span>
+            </div>
+            <pre class="code-block"><code>{
+  <span class="key">"name"</span>: <span class="str">"Gori Biswas"</span>,
+  <span class="key">"role"</span>: <span class="str">"BTech Student"</span>,
+  <span class="key">"college"</span>: <span class="str">"STCET, Kolkata"</span>,
+  <span class="key">"branch"</span>: <span class="str">"CS&T"</span>,
+  <span class="key">"interests"</span>: [
+    <span class="str">"Full-Stack Dev"</span>,
+    <span class="str">"Machine Learning"</span>,
+    <span class="str">"Open Source"</span>
+  ],
+  <span class="key">"available"</span>: <span class="bool">true</span>,
+  <span class="key">"hometown"</span>: <span class="str">"Kolkata 🌆"</span>,
+  <span class="key">"coffee"</span>: <span class="str">"☕ Essential"</span>
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+        <!-- Card 1 -->
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">🌐</div>
+          <h3>Frontend</h3>
+          <div class="skill-tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            <span>React.js</span><span>Next.js</span><span>TailwindCSS</span>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">⚙️</div>
+          <h3>Backend</h3>
+          <div class="skill-tags">
+            <span>Node.js</span><span>Express</span><span>Python</span>
+            <span>Django</span><span>REST APIs</span><span>GraphQL</span>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">🤖</div>
+          <h3>AI / ML</h3>
+          <div class="skill-tags">
+            <span>TensorFlow</span><span>PyTorch</span><span>scikit-learn</span>
+            <span>Pandas</span><span>NumPy</span><span>OpenCV</span>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">🗄️</div>
+          <h3>Database &amp; Cloud</h3>
+          <div class="skill-tags">
+            <span>MongoDB</span><span>PostgreSQL</span><span>Firebase</span>
+            <span>AWS</span><span>Docker</span><span>Redis</span>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">🛠️</div>
+          <h3>Tools &amp; Others</h3>
+          <div class="skill-tags">
+            <span>Git</span><span>GitHub</span><span>Linux</span>
+            <span>Figma</span><span>VS Code</span><span>Postman</span>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">💡</div>
+          <h3>CS Fundamentals</h3>
+          <div class="skill-tags">
+            <span>DSA</span><span>OS</span><span>DBMS</span>
+            <span>Networking</span><span>OOP</span><span>System Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal">
+          <div class="project-image" style="background: linear-gradient(135deg,#6C63FF,#3B82F6);">
+            <div class="project-icon">🧠</div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>Python</span><span>TensorFlow</span><span>Flask</span>
+            </div>
+            <h3>NeuroCrop AI</h3>
+            <p>An AI-powered crop disease detection system using CNNs trained on 87,000+ images. Achieved 96.3% accuracy. Used by 500+ farmers in pilot program.</p>
+            <div class="project-links">
+              <a href="#" class="proj-link">GitHub ↗</a>
+              <a href="#" class="proj-link proj-demo">Live Demo ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal">
+          <div class="project-image" style="background: linear-gradient(135deg,#EC4899,#8B5CF6);">
+            <div class="project-icon">💬</div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>React</span><span>Node.js</span><span>Socket.io</span>
+            </div>
+            <h3>ChatSphere</h3>
+            <p>Real-time chat application with end-to-end encryption, multimedia sharing, and group chats. 1000+ users during beta. Features PWA offline support.</p>
+            <div class="project-links">
+              <a href="#" class="proj-link">GitHub ↗</a>
+              <a href="#" class="proj-link proj-demo">Live Demo ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal">
+          <div class="project-image" style="background: linear-gradient(135deg,#10B981,#3B82F6);">
+            <div class="project-icon">📊</div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>Next.js</span><span>MongoDB</span><span>D3.js</span>
+            </div>
+            <h3>FinTracker Pro</h3>
+            <p>Personal finance dashboard with intelligent expense categorization, spending insights, and beautiful D3.js charts. Secured 2nd place at HackDSC 2024.</p>
+            <div class="project-links">
+              <a href="#" class="proj-link">GitHub ↗</a>
+              <a href="#" class="proj-link proj-demo">Live Demo ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal">
+          <div class="project-image" style="background: linear-gradient(135deg,#F59E0B,#EF4444);">
+            <div class="project-icon">🔗</div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>Solidity</span><span>React</span><span>Web3.js</span>
+            </div>
+            <h3>DecenVote</h3>
+            <p>A decentralized voting platform on Ethereum blockchain ensuring transparent, tamper-proof elections. Deployed on Goerli testnet with 300+ test transactions.</p>
+            <div class="project-links">
+              <a href="#" class="proj-link">GitHub ↗</a>
+              <a href="#" class="proj-link proj-demo">Live Demo ↗</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-desc">Have a project in mind, want to collaborate, or just say hello? I'd love to hear from you!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:gorib9324@gmail.com">gorib9324@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+918777288643">+91 87772 88643</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <strong>Location</strong>
+              <span>Kolkata, West Bengal, India</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">💼</div>
+            <div>
+              <strong>LinkedIn</strong>
+              <a href="#">linkedin.com/in/goribiswas</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🐙</div>
+            <div>
+              <strong>GitHub</strong>
+              <a href="#">github.com/goribiswas</a>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-btn" title="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="#" class="social-btn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" class="social-btn" title="Twitter/X">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" required autocomplete="name" />
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email" required autocomplete="email" />
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" placeholder="Subject" required />
+            <label for="subject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="btn-primary form-submit" id="submit-btn">
+            <span>Send Message 🚀</span>
+          </button>
+          <div class="form-success" id="form-success">✅ Message sent successfully!</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <span class="nav-logo">&lt;Gori /&gt;</span>
+      <p>Crafted with ❤️ &amp; lots of ☕ by Gori Biswas &bull; 2026</p>
+      <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
